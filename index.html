@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modify.css">
+    <link rel="stylesheet" href="css/game-container.css">
+    <link rel="stylesheet" href="css/footer1.css">
+    <link rel="stylesheet" href="css/_e.css">
+    <script defer src="script/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="script/jquery.js"></script>
+    <title>Home</title>
+<!-- KULANG PA ICON SA LAHAT NG PAGE -->
+
+</head>
+<body onload="loadData()">
+    <header>
+        <div class="nintendo-logo">
+            <img src="imgs/Nintendo.png" alt="Nintendo Logo" width="150px" id="nintendoLogo">
+        </div>
+        <div class="right">
+          <div class="search-container">
+            <div class="alignment">
+              <div class="search">
+                <input onkeyup="searchData()"  type="text" name="search-box" id="search-box" class="search-box" placeholder="Search a game...">
+                <img src="imgs/searchButton.png" alt="Search Button" id="search-button" class="search-button">
+              </div>
+              <div class="drop" id="drop"></div> 
+            </div>
+          </div>
+          <nav>  
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle selected" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    GAMES
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><span class="label">GAMES</span></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Browse Games</a></li>
+                    <li><a class="dropdown-item" href="pages/create.html">Add New Game</a></li>
+                    <li><a class="dropdown-item" href="pages/update.php">Update Existing Game</a></li>
+                    <li><a class="dropdown-item" href="pages/delete.php">Remove Game</a></li>
+                  </ul>
+                  <a class="btn btn-secondary" href="pages/about.html">
+                    ABOUT US
+                  </a>
+              </div>
+          </nav>
+        </div>
+    </header>
+    <main>  
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="imgs/stockImage01.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="imgs/stockImage02.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="imgs/stockImage03.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="imgs/stockImage04.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="content-container">
+            <h1 class="h1-create">Nintendo Games</h1>
+            <div class="gameContainer" id="gameContainer"></div>
+          </div>
+    </main>
+    <footer>
+      <span class="rights">&copy Nintendo 2023. &nbsp Games are property of their respective owners. Nintendo of America Inc. Headquarters are in Redmond, Washington, USA.</span>
+      <div class="media">
+        <span class="desc">Contact Us</span>
+        <div class="icons">
+          <img src="imgs/fb.png" alt="facebook logo" width="30px">
+          <img src="imgs/twitter.png" alt="twitter logo" width="30px">
+          <img src="imgs/gmail.png" alt="gmail logo" width="30px">
+        </div>
+      </div>
+    </footer>
+    <!-- Modal Trigger -->
+    <button id="modal-trigger" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display:none;">
+      Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal-title">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-content">
+            ...
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

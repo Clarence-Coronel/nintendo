@@ -1,0 +1,19 @@
+.form-select{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: -0.6vw;
+}
+
+select option {
+    background-color: #333131;
+}
+
+.form-select:focus{
+    box-shadow: none;
+}
+.option:hover{
+    background-color: rgb(3, 2, 1);
+}

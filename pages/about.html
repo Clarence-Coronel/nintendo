@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/modify.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/footer3.css">
+    <link rel="stylesheet" href="../css/_e.css">
+    <script defer src="../script/functions2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="../script/jquery.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <div class="nintendo-logo">
+            <a href="../index.html"><img src="../imgs/Nintendo.png" alt="Nintendo Logo" width="150px" id="nintendoLogo"></a>
+        </div>
+        <div class="right">
+            <div class="search-container">
+                <div class="alignment">
+                  <div class="search">
+                    <input onkeyup="searchData()"  type="text" name="search-box" id="search-box" class="search-box" placeholder="Search a game...">
+                    <img src="../imgs/searchButton.png" alt="Search Button" id="search-button" class="search-button">
+                  </div>
+                  <div class="drop" id="drop"></div> 
+                </div>
+              </div>
+          <nav>  
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle selected" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    GAMES
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><span class="label">GAMES</span></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../index.html">Browse Games</a></li>
+                    <li><a class="dropdown-item" href="create.html">Add New Game</a></li>
+                    <li><a class="dropdown-item" href="update.php">Update Existing Game</a></li>
+                    <li><a class="dropdown-item" href="delete.php">Remove Game</a></li>
+                  </ul>
+                  <a class="btn btn-secondary" href="about.html">
+                    ABOUT US
+                  </a>
+              </div>
+          </nav>
+        </div>
+    </header>
+    <main>
+        <div class="about-container">
+            <h2>About Us</h2>
+            <br>
+            <p>Nintendo's mission is to put smiles on the faces of everyone we touch. We do so by creating new surprises for people across the world to enjoy together. We've forged our own path since 1889, when we began making hanafuda playing cards in Kyoto, Japan. Today, we’re fortunate to be able to share our characters, ideas and worlds through the medium of video games and the entertainment industry.
+                <br><br>
+                Nintendo of America, established in 1980 and based in Redmond, Wash., is a wholly owned subsidiary of Nintendo Co., Ltd. We are committed to delivering best-in-class products and services to our customers and to investing in the well-being of our employees as part of the global Nintendo family.
+            </p>
+            <br>
+            <hr>
+        </div>
+        <br>
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="member-container">
+                <div class="img-container">
+                    <img src="../imgs/clarence.png" alt="" class="team-img"> 
+                </div>   
+                <div class="last-name">CORONEL</div>
+                <div class="first-name">Clarence</div> 
+            </div>
+            <div class="member-container">
+                <div class="img-container">
+                    <img src="../imgs/miggy.png" alt="" class="team-img"> 
+                </div>   
+                <div class="last-name">DULAY</div>
+                <div class="first-name">Miguel</div> 
+            </div>
+            <div class="member-container">
+                <div class="img-container">
+                    <img src="../imgs/ian.png" alt="" class="team-img"> 
+                </div>   
+                <div class="last-name">DY</div>
+                <div class="first-name">Ian Jasper</div> 
+            </div>
+            <div class="member-container">
+                <div class="img-container">
+                    <img src="../imgs/jio.png" alt="" class="team-img"> 
+                </div>   
+                <div class="last-name">ESTRADA</div>
+                <div class="first-name">Jio Mark</div> 
+            </div>
+            <div class="member-container">
+                <div class="img-container">
+                    <img src="../imgs/kim.png" alt="" class="team-img"> 
+                </div>   
+                <div class="last-name">FLORES</div>
+                <div class="first-name">Kim</div> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo-container">
+            <img src="../imgs/grayscaled.png" alt="nintendo logo" class="footer-logo" width="240px">
+        </div>
+        <p class="footer-desc">
+            &copy Nintendo. Games are property of their respective owners. <br>
+            Nintendo of America Inc. Headquarters are in Redmond, Washington, USA.
+        </p>
+        <span class="policy-container">
+            <a href="https://www.nintendo.com/ph/about_hp.html" target="_blank">WEBSITE POLICY</a> 
+        </span>
+    </footer>
+    <!-- Modal Trigger -->
+    <button id="modal-trigger" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display:none;">
+        Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal-title">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-content">
+            ...
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

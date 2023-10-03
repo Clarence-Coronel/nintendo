@@ -1,0 +1,232 @@
+body{
+    width: 100% !important;
+    height: 90vh !important;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.form{
+    background-color: #292727;
+    width: 70%;
+    height: 700px;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 1rem 3rem;
+    min-width: 1300px;
+}
+
+.head-form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.head-form h1{
+    flex: 2 1 auto;
+    font-size: 3.5rem;
+}
+.warning{
+    width: 25%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8B8B8B;
+    text-align: left;
+}
+
+.highlight{
+    color: #F05B5C;
+}
+
+.input label{
+    color: #8B8B8B;
+    font-size: 13px;
+}
+
+.main-form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+/* ayusin pa to ithink */
+.uploader{
+    flex: 1 1 0;
+}
+
+.game-input{
+    flex: 1 1 0;
+}
+
+.game-input{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 35px;
+    width: 100%;
+}
+
+/* temp */
+.input{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1.2vw;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    height: 90px;
+    width: 48%;
+}
+
+.form-input, .dropdown{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.form-input:focus{
+    outline: none;
+}
+
+
+.img-container{
+    width: 250px;
+}
+
+.footer-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-submit{
+    border: none;
+    background-color: #F05B5C;
+    border-radius: 1rem;
+    width: 25%;
+    height: 70px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition-duration: 0.5s;
+}
+
+.form-submit::after{
+    background-color: #F05B5C;
+}
+select .form-submit:hover{
+    background-color: white;
+    color: #F05B5C;
+    cursor: pointer;
+}
+
+.temp-modify{
+    border: 2px solid white;
+    background-color: aqua;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #ffffff;
+}
+
+
+#image-prev{
+    height: 343px;
+    width: 260px;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333131;
+    
+}
+
+#image-prev:hover{
+    cursor: pointer;
+}
+
+.cover{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #292727bd;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.cover{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #292727bd;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 1rem;
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+.download-text{
+    text-align: center;
+    color: #8B8B8B;
+}
+
+.title-txt{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+}
+
+.avail{
+    color: #9AFF9E;
+    position: relative;
+    bottom: 42px;
+    right: 5px;
+    font-weight: 600;
+}
+
+.notAvail{
+    color: #F05B5C;
+    position: relative;
+    bottom: 42px;
+    right: 5px;
+    font-weight: 600;
+}

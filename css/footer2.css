@@ -1,0 +1,38 @@
+footer a{
+    all: unset;
+}
+
+footer{
+    padding: 0 7vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    background-color: #FF4248;
+    height: 300px;
+    font-weight: 600;
+    background-color: #211E1F;
+    gap: 30px;
+}
+
+.footer-desc{
+    text-align: center;
+    color: #818181;
+    font-weight: 500 !important;
+    font-size: 20px;
+}
+
+.policy-container{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.policy-container:hover{
+    color: #FF4248;
+    cursor: pointer;
+}
+
+
+

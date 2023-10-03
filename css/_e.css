@@ -1,0 +1,56 @@
+.game_e{
+display: flex;
+gap: 1vw;
+}
+
+.image-container_e{
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 200px;
+}
+.image-search_e{
+    width: 100%;
+    height: 100%;
+}
+
+.text-container_e{
+    line-height: 1.1rem;
+    width: 50%;
+}
+.title_e{
+    color: #F05B5C;
+    font-size: 2rem;
+    font-weight: 600;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.title_e:hover{
+
+    white-space: unset;
+    overflow: unset;
+    text-overflow: unset;
+
+}
+
+.genre_e, .releaseYear_e, .console_e, .director_e{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.genre_e::before{
+    content: 'Genre: ';
+    font-size: 1rem;
+}
+.releaseYear_e::before{
+    content: 'Release Year: ';
+    font-size: 1rem;
+}
+.console_e::before{
+    content: 'Console: ';
+    font-size: 1rem;
+}
+.director_e::before{
+    content: 'Director: ';
+    font-size: 1rem;
+}

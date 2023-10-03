@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imgs/bg-loop.png);
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+
+main{
+    padding-bottom: 5%;
+    overflow-y: visible !important;
+    
+}
+
+/* body{
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+body::-webkit-scrollbar { 
+    display: none; 
+} */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #555;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #949191;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #aeacac;
+}
+
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 2vw;
+    height: fit-content;
+    background-color: #FF4248;
+}
+
+.nintendo-logo{
+    flex: 1 1 auto;
+}
+
+#nintendoLogo{
+    margin: 0 5%;
+    width: 180px;
+    scale: 1.5;
+}
+/* 
+nav{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
+
+.drop{
+    flex: 1 1 0;
+    background-color: white;
+    width: 500px;
+    /* top: 80px;
+    right: 359px; */
+    height: fit-content;
+    position: absolute;
+    display: none;
+    flex-flow: column;
+    gap: 0.2vw; 
+    justify-content: center;
+    align-items:flex-start;
+    z-index: 5 !important;
+    align-self: flex-start;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #FF4248;
+    min-width: 350px;
+    border-radius: 1rem;
+    padding: 1vw 0;
+    border: 2px solid rgba(75, 74, 74, 0.605);
+ }
+
+ .alignment{
+    width: 500px;
+ }
+
+ /* .drop::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 100px -5px rgba(90, 89, 89, 0.582) inset;
+    border-radius: 1rem;
+ } */
+@media only screen and (max-width: 1800px) {
+    .search-container {
+        right: 20.5%;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .search-container {
+        right: 19%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .search-container {
+        right: 18%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .search-container {
+        right: 17%;
+    }
+}
+
+.search-box{
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    width: 30vw;
+    height: 60px;
+    font-weight: 700;
+}
+
+.search-box:focus {
+    outline: none;
+  }
+
+/* .search-button{
+    position: absolute;
+    top: 6px;
+    right: -2.5vw;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1800px) {
+    .search-button{
+        right: -1vw;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .search-button{
+        right: 3%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .search-button{
+        right: 8%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .search-button{
+        right: 20%;
+    }
+} */
+
+
+.search-button:hover{
+    cursor: pointer;
+}
+
+.right{
+    flex: 2 1 auto;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 1vw;
+}
+
+.result-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    width: 100%;
+    padding: 1% 5%;
+}
+
+.result-container:hover{
+    background-color: #FF4248;
+    color: white;
+    cursor: pointer;
+}
+
+.image-container{
+    flex: 1 1 auto;
+}
+.result-detail{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 7%;
+    width: 100%;
+}
+
+.result-title{
+    font-size: 2rem;
+    margin-bottom: -7px;
+}
+
+.result-year{
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.h1-create{
+    z-index: 1;
+    color: white;
+    font-size: 5rem;
+    padding: 0 6vw;
+    padding-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+@media only screen and (max-width: 1800px) {
+    .h1-create{
+        padding: 0 5vw;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .h1-create{
+        padding: 0 4vw;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .h1-create{
+        padding: 0 3vw;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .h1-create{
+        padding: 0 2vw;
+    }
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-search{
+    border-radius: 1rem;
+}
+
+
+ .modal-title{
+    font-weight: 700;
+ }
+
+
+ .cancel, .confirm{
+    padding: 1% 3%;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0 0.2vw;
+ }
+
+ .cancel{
+    
+    background-color: white;
+    color: black;
+ }
+
+ .confirm{
+    background-color: #FF4248;
+    color: white;
+ }
+
+ .confirm:hover{
+    background-color: #bc2b30;
+ }
+
+ .modal-body{
+    padding: 2vw 1vw;
+ }
+
+
+ .search{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1px;
+    
+ }
+
+ #search-box{
+    flex: 1 1 0;
+    padding: 10px;
+ }
+
+ #search-button{
+
+ }

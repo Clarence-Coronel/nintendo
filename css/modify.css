@@ -1,0 +1,114 @@
+.slide{
+    overflow: hidden;
+    height: 195px;
+}
+
+@media only screen and (max-width: 1800px) {
+    .slide{
+        overflow: hidden;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .slide{
+        overflow: hidden;
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .slide{
+        overflow: hidden;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .slide{
+        overflow: hidden;
+        height: 140px;
+    }
+}
+
+.slide::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -40px 30px 1px rgba(0, 0, 0, 0.813) inset;
+  }
+
+.carousel-control-prev-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #2e2e2e91;
+}
+
+.carousel-control-next-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+
+    background-color: #2e2e2e91;
+}
+
+.btn{
+    background-color: transparent !important;
+    border: none !important;
+    width: 15vw;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu{
+    width: 15vw;
+    background-color: #2e2e2e;
+    padding: 1rem;
+    border-top: #FF4248;
+}
+
+.dropdown-item{
+    color: white !important;
+    border-radius: 0.5rem;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0.064) !important;
+}
+
+.label{
+    color: white;
+    font-size: 1.3rem;
+    padding: 10% 5%;
+}
+
+.label:hover{
+    cursor:default;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+hr{
+    background-color: rgb(72, 72, 72);
+}
+
+.label, .selected{
+    font-weight: 600;
+}
+
+.dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(180deg); 
+}
+
+.btn{
+    width: fit-content;
+    font-weight: 600;
+    margin-left: 1vw;
+    font-size: 1.3rem;
+}

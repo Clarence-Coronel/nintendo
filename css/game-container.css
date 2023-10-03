@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+
+.gameContainer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 55px;
+    justify-content: center;
+}
+
+.game{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #F05B5C;
+    width: 370px;
+    height: 560px;
+    border-radius: 1rem;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 1rem;
+    padding: 20px;
+}
+
+.game:hover{
+    position: relative;
+    border: 5px solid white;
+    height: 590px;
+    background-color: transparent;
+    color: white !important;
+    cursor: pointer;
+    transform:translateY(-2rem);
+    margin-bottom: -30px;
+}
+
+
+.game:hover .title, .game:hover .genre,  .game:hover .releaseYear, .game:hover .console, .game:hover .director{
+    position: relative;
+    color: white;
+    cursor: pointer;
+    white-space:unset;
+    overflow:unset;
+    text-overflow:unset;
+}
+.img-container{
+    border-radius: 2rem;
+    width: fit-content;
+    flex: 2 1 auto;
+    
+}
+
+.uimg{
+    border-radius: 20px;
+    object-fit: fill;
+    border: 5px solid #F05B5C;
+}
+
+.game:hover .uimg{
+    border: unset;
+}
+
+.text-container{
+    width: 90%;
+    text-align: left;
+    padding: 0 0 0 7px;
+    flex: 1 1 auto;
+    overflow-y: scroll;
+}
+
+.text-container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.text-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.title{
+    color: #F05B5C;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.genre, .releaseYear, .console, .director{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-duration: 0.5s;
+    color: black;
+}
+
+.genre:hover, .releaseYear:hover, .console:hover, .director:hover{
+    white-space:unset;
+    overflow:unset;
+    text-overflow:unset;
+}
+
+.title:hover{
+    white-space:unset;
+    overflow:unset;
+    text-overflow:unset;
+    cursor: pointer;
+}
+
+.genre::before {
+    content: 'Genre: ';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.releaseYear::before{
+    content: 'Release Year: ';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.console::before{
+    content: 'Console: ';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.director::before{
+    content: 'Director: ';
+    font-size: 1rem;
+    font-weight: 400;
+}

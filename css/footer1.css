@@ -1,0 +1,29 @@
+footer{
+    padding: 0 7vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    background-color: #FF4248;
+    height: 120px;
+    font-weight: 600;
+}
+
+.rights{
+    font-size: 1.2rem;
+}
+
+.media{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    margin: 0.5vw;
+    display: flex;
+    gap: 1vw;
+}
